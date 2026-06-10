@@ -44,8 +44,8 @@ public class StudentController {
     }
     
     @PatchMapping("/{id}")
-    public void updatedById(@RequestBody StudentEntity stdDo, @PathVariable("id") Long studentId) {
+    public void updatedById(@RequestBody StudentEntity strEntDO, @PathVariable("id") Long studentId) {
 
-        studentService.updateById(stdDo, studentId);
+        studentService.updateById(strEntDO, studentId);
     }
 }
