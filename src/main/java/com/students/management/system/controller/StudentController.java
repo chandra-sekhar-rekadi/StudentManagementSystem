@@ -18,9 +18,9 @@ public class StudentController {
     }
 
     @PostMapping
-    public StudentEntity saveStudent(@RequestBody StudentEntity studentEntity) {
+    public StudentEntity saveStudent(@RequestBody StudentEntity stdEntDO) {
 
-        return studentService.saveStudentDetails(studentEntity);
+        return studentService.saveStudentDetails(stdEntDO);
     }
 
     @GetMapping
