@@ -13,8 +13,8 @@ public class StudentController {
 
     private StudentService studentService;
 
-    public StudentController(StudentService studentService) {
-        this.studentService = studentService;
+    public StudentController(StudentService stuService) {
+        this.studentService = stuService;
     }
 
     @PostMapping
